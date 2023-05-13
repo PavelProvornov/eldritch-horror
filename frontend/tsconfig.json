@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "es5",
+        "allowJs": true,
+        "jsx": "react",
+        "removeComments": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "lib": [
+            "dom", "es2015"
+        ],
+        "types": [
+            "node"
+        ],
+        "baseUrl": "src",
+        "paths": {
+            "@/*": ["*"]
+        },
+    },
+    "ts-node": {
+        "compilerOptions": {
+          "module": "CommonJS"
+        }
+    },
+    "include": ["./**/*", "../webpack.config.ts", "./modules/*"],
+    "exclude": ["node_modules"],
+}
